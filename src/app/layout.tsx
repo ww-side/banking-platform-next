@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 
+import { Toaster } from '@/shared/lib/toaster';
 import { cn } from '@/shared/lib/utils/cn';
 
 import './globals.css';
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={cn(geistSans.variable, geistMono.variable, 'antialiased')}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
